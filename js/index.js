@@ -243,3 +243,87 @@ document.querySelectorAll('[id^="question"]').forEach(function(button, index) {
 //   nextGreeting();
 // });
 
+// IDX alike
+const chars = "ABCDEFHIJKLMNOPQRSTUVWXYZ`1234567890~!@#$%^&*()-=_+[]\\{}|'\",<.>?/";
+
+function randomChar() {
+  return chars[Math.floor(Math.random() * chars.length)];
+}
+
+const rows = [
+  {
+    rows: [">DESIGNED FOR",
+           "  FULLSTACK  ",
+           " DEVS<       "],
+    colors: [
+      [[0, 0], "red"],
+      [[2, 5], "green"]
+    ]
+  },
+  {
+    rows: [">ALWAYS IN   ",
+           " =SYNC WITH</",
+           "YOUR TEAM?   "],
+    colors: [
+      [[0, 0], "blue"],
+      [[1, 1], "green"],
+      [[1, 11], "red"],
+      [[1, 12], "red"],
+      [[2, 9], "blue"],
+    ]
+  }
+];
+
+function animateElement(e, character) {
+  e.className = "";
+
+  function changeCharacter() {
+    e.textContent = randomChar();
+  }
+
+  const interval = setInterval(changeCharacter, 100); // Decreased interval for faster animation
+
+  changeCharacter();
+
+  setTimeout(() => {
+    clearInterval(interval);
+    e.textContent = character.char;
+    e.classList.add("active");
+    if (character.char === " ") {
+      e.classList.add("hide");
+    }
+    if (character.color) {
+      e.classList.add(`table-text-${character.color}`);
+    }
+  }, 375); // Adjusted timeout for consistency with the faster animation speed
+}
+
+function animateRow(row, rowElement) {
+  const elements = rowElement.querySelectorAll("td");
+  const characters = row.rows
+    .map((r) => r.split(""))
+    .flat()
+    .map((char, i) => {
+      const rowI = Math.floor(i / 13);
+      const colI = i % 13;
+      const color = row.colors.find((c) => {
+        return c[0][0] === rowI && c[0][1] === colI;
+      })?.[1];
+      return { char, color };
+    });
+
+  elements.forEach((e, i) => {
+    setTimeout(() => {
+      animateElement(e, characters[i]);
+    }, i * 100); // Adjusted interval for faster animation
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tableElement = document.querySelector("table.fancy-table");
+  animateRow(rows[Math.floor(Math.random() * rows.length)], tableElement);
+  setInterval(() => {
+    animateRow(rows[Math.floor(Math.random() * rows.length)], tableElement);
+  }, 5000);
+});
+// end IDX alike
