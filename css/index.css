@@ -8,6 +8,63 @@
   --dot-space: 50px;
 }
 
+html{
+  background: var(--dot-bg);
+}
+
+@font-face {
+  font-family: 'Google Sans Display Regular';  /* you can name it whatever you want */
+  src: url('fonts/Google Sans Display Regular/Google Sans Display Regular.ttf');  /* replace with your font's path and file name */
+}
+@font-face {
+  font-family: 'Google Sans Text Regular';  /* you can name it whatever you want */
+  src: url('fonts/OnlineWebFonts_COM_5c4fcd687637035e8854b4e9b94e727c/Google Sans Text Regular/Google Sans Text Regular.ttf');  /* replace with your font's path and file name */
+}
+h1 {
+  font-family: 'Google Sans Display Regular', fallback, sans-serif;
+}
+p{
+  font-family: 'Google Sans Text Regular', fallback, sans-serif;
+
+}
+/* Hero section */
+.hero-section{
+  background: url("../logo.svg");
+  background-repeat:no-repeat;
+  height: 60vh;
+  background-position: center center;
+  background-size:contain;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5rem;
+}
+
+.heading {
+  color: #eee;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Main section */
+main{
+  background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+  animation: moveDots 100s linear infinite;
+}
+
+.group:hover img {
+  filter: grayscale(0);
+}
+
+
 
 html{
   background: var(--dot-bg);
