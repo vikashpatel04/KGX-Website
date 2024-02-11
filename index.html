@@ -46,7 +46,7 @@
           <ul
             class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
-              <a href="#" class="block py-2 px-3 md:p-0 text-white" aria-current="page">Home</a>
+              <a href="#" class="block py-2 px-3 md:p-0 text-white hover:text-blue-700" aria-current="page">Home</a>
             </li>
             <li>
               <a href="#" class="block py-2 px-3 md:p-0 rounded text-white hover:text-blue-700">About</a>
@@ -278,11 +278,11 @@
               </div>
             </div>
             <div class="w-full px-4 mb-10 xl:w-1/2 lg:mb-8">
-              <span class="text-sm font-semibold text-blue-500 dark:text-blue-400">Why choose us</span>
-              <h2 class="mt-2 mb-4 text-2xl font-bold text-gray-700 dark:text-gray-300">
+              <h2 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">Why choose us</h2>
+              <p class="text-xl text-gray-100 md:text-center md:text-2xl">
                 We are providing a better facility
-              </h2>
-              <p class="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
+              </p>
+              <p class="mb-4 mt-4 text-base leading-7 text-gray-500 dark:text-gray-400">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut
                 labore et dolore magna aliqua. Ut enim ad minim veniam
@@ -329,10 +329,7 @@
                   esktop publishers bundled the text with their software.
                 </li>
               </ul>
-              <a href="#"
-                class="px-4 py-2 text-gray-100 bg-blue-500 rounded-md dark:bg-blue-400 dark:hover:bg-blue-500 hover:bg-blue-600">
-                Learn more
-              </a>
+              <button class="flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">Learn more</button>
             </div>
           </div>
         </div>
@@ -343,17 +340,17 @@
       <!-- Technology -->
       <section class="py-8 max-w-7xl mx-auto">
         <div class="px-6 md:px-12 xl:px-6">
-          <div class="md:w-2/3 lg:w-1/2 mt-12 text-gray-100">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-              class="w-6 h-6 text-secondary">
-              <path fill-rule="evenodd"
-                d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
-                clip-rule="evenodd"></path>
-            </svg>
-            <h2 class="my-8 text-2xl font-bold text-white md:text-4xl">Our Work</h2>
-            <p class="text-gray-300">We have built many products and some of them are below</p>
+            <div>
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                class="w-6 h-6 text-secondary">
+                <path fill-rule="evenodd"
+                  d="M9 4.5a.75.75 0 01.721.544l.813 2.846a3.75 3.75 0 002.576 2.576l2.846.813a.75.75 0 010 1.442l-2.846.813a3.75 3.75 0 00-2.576 2.576l-.813 2.846a.75.75 0 01-1.442 0l-.813-2.846a3.75 3.75 0 00-2.576-2.576l-2.846-.813a.75.75 0 010-1.442l2.846-.813A3.75 3.75 0 007.466 7.89l.813-2.846A.75.75 0 019 4.5zM18 1.5a.75.75 0 01.728.568l.258 1.036c.236.94.97 1.674 1.91 1.91l1.036.258a.75.75 0 010 1.456l-1.036.258c-.94.236-1.674.97-1.91 1.91l-.258 1.036a.75.75 0 01-1.456 0l-.258-1.036a2.625 2.625 0 00-1.91-1.91l-1.036-.258a.75.75 0 010-1.456l1.036-.258a2.625 2.625 0 001.91-1.91l.258-1.036A.75.75 0 0118 1.5zM16.5 15a.75.75 0 01.712.513l.394 1.183c.15.447.5.799.948.948l1.183.395a.75.75 0 010 1.422l-1.183.395c-.447.15-.799.5-.948.948l-.395 1.183a.75.75 0 01-1.422 0l-.395-1.183a1.5 1.5 0 00-.948-.948l-1.183-.395a.75.75 0 010-1.422l1.183-.395c.447-.15.799-.5.948-.948l.395-1.183A.75.75 0 0116.5 15z"
+                  clip-rule="evenodd"></path>
+              </svg> -->
+            <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">Our Work</h1>
+             <p class="text-xl text-gray-100 md:text-center md:text-2xl">We have built many products and some of them are below</p>
           </div>
-          <div class="mt-16 grid gap-6 overflow-hidden text-gray-600 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="mt-16 grid gap-6 overflow-hidden text-gray-600 sm:grid-cols-2 lg:grid-cols-3">
             <div
               class="group relative rounded-2xl bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
               <div class="relative space-y-8 py-12 p-8">
@@ -398,7 +395,7 @@
                 </div>
               </div>
             </div>
-            <div
+            <!-- <div
               class="group relative rounded-2xl bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
               <div class="relative space-y-8 py-12 p-8">
                 <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
@@ -408,8 +405,8 @@
                   <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
                 </div>
               </div>
-            </div>
-            <div
+            </div> -->
+            <!-- <div
               class="group relative rounded-2xl bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
               <div class="relative space-y-8 py-12 p-8">
                 <img src="https://www.svgrepo.com/show/120850/logo.svg" loading="lazy" width="200" height="200"
@@ -419,7 +416,7 @@
                   <p class="text-gray-300">Chrome Extension that lets you add ChatGPT on any website</p>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div
               class="group relative rounded-2xl bg-gray-800 transition hover:z-[1] hover:shadow-2xl hover:shadow-gray-600/10">
               <div class="relative space-y-8 py-12 p-8">
@@ -474,7 +471,7 @@
       <!-- End Team -->
 
       <!-- Testimonials -->
-      <section id="testimonies" class="py-8">
+      <!-- <section id="testimonies" class="py-8">
         <div class="max-w-7xl mx-8 md:mx-10 lg:mx-20 xl:mx-auto">
           <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
             <div class="mb-12 space-y-5 md:mb-16 md:text-center">
@@ -636,7 +633,7 @@
 
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- End Feedback -->
 
 
@@ -785,8 +782,8 @@
               <a href="/" class="block w-56 mb-10">
                 <img src="Images/logos/kgx_white-logo.svg" width="220" height="220" alt="">
               </a>
-              <p class="text-justify">
-                Tailwindow is a collection of UI Components created using Tailwind CSS Framework. The UI Components gives you all of the building blocks you need to build any designs without any annoying opinionated styles you have to fight to override.
+                <p class="text-justify">
+                Shared Vision, Shared Success: Unity, integrity, and collaboration define our approach to achieving common goals and fostering innovation.
               </p>
             </div>
   
