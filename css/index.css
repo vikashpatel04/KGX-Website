@@ -118,3 +118,15 @@ main{
 .fancy-table td.table-text-blue {
   color: #00f;
 }
+/* Mobile Style for Hero Section */
+@media screen and (max-width: 600px) {
+  .fancy-table {
+    margin: 24px;
+    font-size: 1.5rem;
+  }
+
+  .fancy-table td {
+    width: 2.5rem;
+    height: 3rem;
+  }
+}
