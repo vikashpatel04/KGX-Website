@@ -46,6 +46,9 @@ p{
   padding: 5rem;
 }
 
+.bg-td{
+  background-color: blue;
+}
 .heading {
   color: #eee;
   font-size: 2rem;
@@ -53,15 +56,24 @@ p{
   text-transform: uppercase;
 }
 
-/* Main section */
-main{
+/* Body section */
+body{
   background:
         linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
         var(--dot-color);
-  animation: moveDots 100s linear infinite;
+  animation: moveDots 500s linear infinite;
 }
 
+@keyframes moveDots {
+  from {
+    background-position: 0 100%, 0 100%;
+  }
+  to {
+    background-position: 0 0, 0 0;
+  }
+  
+}
 .group:hover img {
   filter: grayscale(0);
 }
@@ -92,6 +104,7 @@ main{
 }
 
 .fancy-table td {
+  /* background-color: var(--dot-bg); */
   width: 5rem;
   height: 6rem;
   text-align: center;
