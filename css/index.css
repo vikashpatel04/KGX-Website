@@ -131,6 +131,7 @@ body{
 .fancy-table td.table-text-blue {
   color: #00f;
 }
+
 /* Mobile Style for Hero Section */
 @media screen and (max-width: 600px) {
   .fancy-table {
