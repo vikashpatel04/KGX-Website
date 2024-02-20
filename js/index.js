@@ -327,3 +327,84 @@ document.addEventListener("DOMContentLoaded", function () {
   }, 5000);
 });
 // end IDX alike
+
+
+
+//Number Loop
+//Initialization of three execution points
+
+let execution = 0;
+let execution_2 = 0;
+let execution_3 = 0;
+
+//Initialization of three max-execution points for ending the number loop
+
+let maxEcecution_1 = 2000;
+let maxEcecution_2 = 50;
+let maxEcecution_3 = 5;
+
+
+// Declare observer before using it
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If the target element is visible
+    if (entry.isIntersecting) {
+      // Do something when the element becomes visible
+      setTimeout(onLoop, 0.5);
+      setTimeout(onLoop_1, 0.5);
+      setTimeout(onLoop_2, 0.5);
+
+      console.log("seen");
+      // Unobserve the target element to stop listening
+      observer.unobserve(impactSection); // Corrected variable name
+    }
+  });
+});
+
+const impactSection = document.querySelector('.impacts');
+observer.observe(impactSection);
+
+
+
+
+
+//Loop for first one going till 2000
+
+function onLoop() {
+  execution += 4;
+  impactSection.firstChild.textContent = execution + "+";
+  if(execution < maxEcecution_1){
+    setTimeout(onLoop, .1);
+
+  }
+  
+}
+
+//Loop for second one going till 50
+
+function onLoop_1(){
+  execution_2++;
+  impactSection.children[1].textContent = execution_2 + "+";
+  impactSection.children[2].textContent = execution_2 + "+"; 
+  if(execution_2 < maxEcecution_2){
+    setTimeout(onLoop_1, 45);
+  }
+
+}
+
+//Loop for third one going till 5
+
+function onLoop_2(){
+  execution_3++;
+  impactSection.lastChild.textContent = execution_3;
+  if(execution_3 < maxEcecution_3){
+    setTimeout(onLoop_2, 200);
+  }
+}
+
+
+
+//end Number Loop
+
+
+
