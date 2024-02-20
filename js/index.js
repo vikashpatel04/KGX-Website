@@ -331,11 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //Number Loop
-
-
-const impactSection = document.querySelector('.impacts');
-
-
 //Initialization of three execution points
 
 let execution = 0;
@@ -347,6 +342,29 @@ let execution_3 = 0;
 let maxEcecution_1 = 2000;
 let maxEcecution_2 = 50;
 let maxEcecution_3 = 5;
+
+
+// Declare observer before using it
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    // If the target element is visible
+    if (entry.isIntersecting) {
+      // Do something when the element becomes visible
+      setTimeout(onLoop, 0.5);
+      setTimeout(onLoop_1, 0.5);
+      setTimeout(onLoop_2, 0.5);
+
+      console.log("seen");
+      // Unobserve the target element to stop listening
+      observer.unobserve(impactSection); // Corrected variable name
+    }
+  });
+});
+
+const impactSection = document.querySelector('.impacts');
+observer.observe(impactSection);
+
+
 
 
 
@@ -383,13 +401,6 @@ function onLoop_2(){
     setTimeout(onLoop_2, 200);
   }
 }
-
-
-//invoking the three loops
-
-setTimeout(onLoop, 0.5);
-setTimeout(onLoop_1, 0.5);
-setTimeout(onLoop_2, 0.5);
 
 
 
