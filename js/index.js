@@ -341,7 +341,7 @@ let execution_3 = 0;
 
 let maxEcecution_1 = 2000;
 let maxEcecution_2 = 50;
-let maxEcecution_3 = 5;
+let maxEcecution_3 = 505;
 
 
 // Declare observer before using it
@@ -395,22 +395,40 @@ function onLoop_1(){
   ele_1.textContent = "+";
   impactSection.children[4].children[0].appendChild(ele_1);
   if(execution_2 < maxEcecution_2){
-    setTimeout(onLoop_1, 55);
+    setTimeout(onLoop_1, 40);
   }
 
 }
 
 //Loop for third one going till 5
 
+// function onLoop_2(){
+//   execution_3++;
+//   impactSection.children[6].children[0].textContent = execution_3;
+//   let ele = document.createElement("sup");
+//   ele.textContent = "+";
+//   impactSection.children[6].children[0].appendChild(ele); 
+//   if(execution_3 < maxEcecution_3){
+
+//     setTimeout(onLoop_2, 480);
+//   }
+// }
+
 function onLoop_2(){
-  execution_3 = 0;
-  impactSection.children[6].children[0].textContent = execution_3;
+  impactSection.children[6].children[0].textContent = Math.ceil(Math.random() * 5);
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[6].children[0].appendChild(ele); 
   if(execution_3 < maxEcecution_3){
+    execution_3++;
+    setTimeout(onLoop_2, .10);
+  }
+  else{
 
-    setTimeout(onLoop_2, 800);
+    impactSection.children[6].children[0].textContent = 5;
+    let eleLast = document.createElement("sup");
+    eleLast.textContent = "+";
+    impactSection.children[6].children[0].appendChild(eleLast); 
   }
 }
 

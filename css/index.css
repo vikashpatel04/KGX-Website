@@ -148,12 +148,9 @@ body{
 /* Impacats CSS */
 
 #impacts {
-<<<<<<< HEAD
-  margin: 4rem  auto;
   user-select: none;
-=======
+
   margin: 4rem auto 2rem auto;
->>>>>>> refs/remotes/origin/main
 }
 section.my-alert {
   padding: 0.75rem 0; /* 12px */;
