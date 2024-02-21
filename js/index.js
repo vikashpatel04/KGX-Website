@@ -403,13 +403,13 @@ function onLoop_1(){
 //Loop for third one going till 5
 
 function onLoop_2(){
-  execution_3++;
+  execution_3 = 0;
   impactSection.children[6].children[0].textContent = execution_3;
   // let ele = document.createElement("sup");
   // ele.textContent = "+";
   // impactSection.children[0].appendChild(ele);
   if(execution_3 < maxEcecution_3){
-    setTimeout(onLoop_2, 200);
+    setTimeout(onLoop_2, 500);
   }
 }
 

@@ -149,6 +149,7 @@ body{
 
 #impacts {
   margin: 4rem  auto;
+  user-select: none;
 }
 section.my-alert {
   padding: 0.75rem 0; /* 12px */;
