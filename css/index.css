@@ -145,15 +145,120 @@ body{
   }
 }
 
+/* Impacats CSS */
 
-
-
-/* Number Loop */
-
-.impacts{
-  margin-top: 10%;
-  background-color: #1f2937;
-  color: #ffffff;
+#impacts {
+  margin: 4rem  auto;
+}
+section.my-alert {
+  padding: 0.75rem 0; /* 12px */;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* 48px */
 }
 
+section.my-alert > div.my-alert__unique1 {
+  text-align: center;
+  font-weight: 600;
+  background-color: #1F2937;
+  border-color:rgb(16 21 29);
+  border-width: 2px;
+  color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding-left: 0.75rem; /* 12px */
+  padding-right: 0.75rem; /* 12px */
+  padding-top: 0.25rem; /* 4px */
+  padding-bottom: 0.25rem; /* 4px */
+  border-radius: 0.75rem; /* 12px */
+}
+
+section.my-alert > div.my-alert__unique2 {
+  border-color:rgb(16 21 29);
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-weight: 400;
+  border-width: 2px;
+  padding-top: 2rem; /* 32px */
+  padding-bottom: 2rem; /* 32px */
+  border-radius: 0.75rem; /* 12px */
+  background-color: #1F2937;
+}
+
+section.my-alert > div > div {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.my-alert > div > div > p.my-alert__unique3 {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+  font-family: "JetBrains Mono", monospace;
+
+}
+
+section.my-alert > div > div > p.my-alert__unique4 {
+  letter-spacing: 0.05em;
+}
+
+section.my-alert > div > a {
+  background-color: rgb(35, 75, 132);
+  width: 1px;
+  border-radius: 0.25rem; /* 4px */
+}
+
+section.my-alert > div > div > p.my-alert__unique5 {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+  font-family: "JetBrains Mono", monospace;
+}
+
+section.my-alert > div > div > p.my-alert__unique6 {
+  letter-spacing: 0.05em;
+}
+
+section.my-alert > div > div > p.my-alert__unique7 {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+  font-family: "JetBrains Mono", monospace;
+
+}
+
+section.my-alert > div > div > p.my-alert__unique8 {
+  letter-spacing: 0.05em;
+}
+
+section.my-alert > div > div > p.my-alert__unique9 {
+  font-size: 4.5rem; /* 72px */
+  line-height: 1;
+  font-family: "JetBrains Mono", monospace;
+
+}
+
+section.my-alert > div > div > p.my-alert__unique10 {
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 950px) {
+  .my-alert__unique2{
+    flex-direction: column;
+    padding: 0;
+    
+  }
+  .media950{
+    padding:2rem 2rem 2rem 2.8rem;
+    border-bottom: 1px solid #3a3a5a;
+    margin: 0 1rem 0 1rem;
+  }
+  .media950:last-child{
+    border-bottom: none;
+  }
+}
 
