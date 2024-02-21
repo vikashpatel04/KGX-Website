@@ -359,7 +359,7 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-const impactSection = document.querySelector('.impacts');
+const impactSection = document.querySelector('#loops');
 observer.observe(impactSection);
 
 
@@ -370,7 +370,10 @@ observer.observe(impactSection);
 
 function onLoop() {
   execution += 4;
-  impactSection.children[0].textContent = execution + "+";
+  impactSection.children[0].children[0].textContent = execution;
+  let ele = document.createElement("sup");
+  ele.textContent = "+";
+  impactSection.children[0].children[0].appendChild(ele);
   if(execution < maxEcecution_1){
     setTimeout(onLoop, .1);
 
@@ -383,8 +386,14 @@ function onLoop() {
 function onLoop_1(){
   execution_2++;
   
-  impactSection.children[1].textContent = execution_2 + "+";
-  impactSection.children[2].textContent = execution_2 + "+"; 
+  impactSection.children[2].children[0].textContent = execution_2;
+  let ele = document.createElement("sup");
+  ele.textContent = "+";
+  impactSection.children[2].children[0].appendChild(ele);
+  impactSection.children[4].children[0].textContent = execution_2;
+  let ele_1 = document.createElement("sup");
+  ele_1.textContent = "+";
+  impactSection.children[4].children[0].appendChild(ele_1);
   if(execution_2 < maxEcecution_2){
     setTimeout(onLoop_1, 45);
   }
@@ -395,7 +404,10 @@ function onLoop_1(){
 
 function onLoop_2(){
   execution_3++;
-  impactSection.children[3].textContent = execution_3;
+  impactSection.children[6].children[0].textContent = execution_3;
+  // let ele = document.createElement("sup");
+  // ele.textContent = "+";
+  // impactSection.children[0].appendChild(ele);
   if(execution_3 < maxEcecution_3){
     setTimeout(onLoop_2, 200);
   }
