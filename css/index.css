@@ -148,8 +148,12 @@ body{
 /* Impacats CSS */
 
 #impacts {
+<<<<<<< HEAD
   margin: 4rem  auto;
   user-select: none;
+=======
+  margin: 4rem auto 2rem auto;
+>>>>>>> refs/remotes/origin/main
 }
 section.my-alert {
   padding: 0.75rem 0; /* 12px */;
@@ -161,6 +165,7 @@ section.my-alert {
 }
 
 section.my-alert > div.my-alert__unique1 {
+  font-size: 1.2rem; /* 32px */
   text-align: center;
   font-weight: 600;
   background-color: #1F2937;
@@ -198,14 +203,14 @@ section.my-alert > div > div {
   align-items: center;
 }
 
-section.my-alert > div > div > p.my-alert__unique3 {
+section.my-alert > div > div > p.my-alert__unique_h {
   font-size: 4.5rem; /* 72px */
   line-height: 1;
   font-family: "JetBrains Mono", monospace;
 
 }
 
-section.my-alert > div > div > p.my-alert__unique4 {
+section.my-alert > div > div > p.my-alert__unique_s {
   letter-spacing: 0.05em;
 }
 
@@ -215,37 +220,7 @@ section.my-alert > div > a {
   border-radius: 0.25rem; /* 4px */
 }
 
-section.my-alert > div > div > p.my-alert__unique5 {
-  font-size: 4.5rem; /* 72px */
-  line-height: 1;
-  font-family: "JetBrains Mono", monospace;
-}
 
-section.my-alert > div > div > p.my-alert__unique6 {
-  letter-spacing: 0.05em;
-}
-
-section.my-alert > div > div > p.my-alert__unique7 {
-  font-size: 4.5rem; /* 72px */
-  line-height: 1;
-  font-family: "JetBrains Mono", monospace;
-
-}
-
-section.my-alert > div > div > p.my-alert__unique8 {
-  letter-spacing: 0.05em;
-}
-
-section.my-alert > div > div > p.my-alert__unique9 {
-  font-size: 4.5rem; /* 72px */
-  line-height: 1;
-  font-family: "JetBrains Mono", monospace;
-
-}
-
-section.my-alert > div > div > p.my-alert__unique10 {
-  letter-spacing: 0.05em;
-}
 
 @media (max-width: 950px) {
   .my-alert__unique2{
@@ -257,6 +232,11 @@ section.my-alert > div > div > p.my-alert__unique10 {
     padding:2rem 2rem 2rem 2.8rem;
     border-bottom: 1px solid #3a3a5a;
     margin: 0 1rem 0 1rem;
+    
+  }
+
+  section.my-alert > div > div > p.my-alert__unique_h {
+      font-size: 3.5rem;
   }
   .media950:last-child{
     border-bottom: none;

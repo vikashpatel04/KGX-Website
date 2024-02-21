@@ -395,7 +395,7 @@ function onLoop_1(){
   ele_1.textContent = "+";
   impactSection.children[4].children[0].appendChild(ele_1);
   if(execution_2 < maxEcecution_2){
-    setTimeout(onLoop_1, 45);
+    setTimeout(onLoop_1, 55);
   }
 
 }
@@ -405,11 +405,12 @@ function onLoop_1(){
 function onLoop_2(){
   execution_3 = 0;
   impactSection.children[6].children[0].textContent = execution_3;
-  // let ele = document.createElement("sup");
-  // ele.textContent = "+";
-  // impactSection.children[0].appendChild(ele);
+  let ele = document.createElement("sup");
+  ele.textContent = "+";
+  impactSection.children[6].children[0].appendChild(ele); 
   if(execution_3 < maxEcecution_3){
-    setTimeout(onLoop_2, 500);
+
+    setTimeout(onLoop_2, 800);
   }
 }
 
