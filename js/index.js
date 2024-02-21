@@ -353,8 +353,6 @@ const observer = new IntersectionObserver(entries => {
       setTimeout(onLoop, 0.5);
       setTimeout(onLoop_1, 0.5);
       setTimeout(onLoop_2, 0.5);
-
-      console.log("seen");
       // Unobserve the target element to stop listening
       observer.unobserve(impactSection); // Corrected variable name
     }
@@ -372,7 +370,7 @@ observer.observe(impactSection);
 
 function onLoop() {
   execution += 4;
-  impactSection.firstChild.textContent = execution + "+";
+  impactSection.children[0].textContent = execution + "+";
   if(execution < maxEcecution_1){
     setTimeout(onLoop, .1);
 
@@ -384,6 +382,7 @@ function onLoop() {
 
 function onLoop_1(){
   execution_2++;
+  
   impactSection.children[1].textContent = execution_2 + "+";
   impactSection.children[2].textContent = execution_2 + "+"; 
   if(execution_2 < maxEcecution_2){
@@ -396,7 +395,7 @@ function onLoop_1(){
 
 function onLoop_2(){
   execution_3++;
-  impactSection.lastChild.textContent = execution_3;
+  impactSection.children[3].textContent = execution_3;
   if(execution_3 < maxEcecution_3){
     setTimeout(onLoop_2, 200);
   }
