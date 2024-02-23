@@ -132,18 +132,7 @@ body{
   color: #00f;
 }
 
-/* Mobile Style for Hero Section */
-@media screen and (max-width: 600px) {
-  .fancy-table {
-    margin: 24px;
-    font-size: 1.5rem;
-  }
 
-  .fancy-table td {
-    width: 2.5rem;
-    height: 3rem;
-  }
-}
 
 /* Impacats CSS */
 
@@ -215,8 +204,13 @@ section.my-alert > div > a {
   border-radius: 0.25rem; /* 4px */
 }
 
+.hero_logo_text{
+  color: white;
+  font-weight: 600;
+  
+}
 
-
+/* Impacts media query */
 @media (max-width: 950px) {
   .my-alert__unique2{
     flex-direction: column;
@@ -238,3 +232,43 @@ section.my-alert > div > a {
   }
 }
 
+/* Mobile Style for Hero Section */
+@media screen and (max-width: 1110px) {
+  .fancy-table {
+    margin: 24px;
+    font-size: 2.5rem;
+  }
+  .fancy-table td {
+    width: 4rem;
+    height: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fancy-table {
+    margin: 24px;
+    font-size: 1.5rem;
+  }
+
+  .fancy-table td {
+    width: 2.7rem;
+    height: 3rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .hero_logo_text{
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hero_logo_text{
+    font-size: 0.8rem;
+  }
+  .hero_logo{
+    width: 90%;
+  }
+  .logo_hero_wrap{
+    margin-top: 1rem;
+  }
+}
