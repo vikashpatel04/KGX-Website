@@ -340,10 +340,10 @@ let execution_4 = 0;
 
 //Initialization of three max-execution points for ending the number loop
 
-let maxEcecution_1 = 250;
-let maxEcecution_2 = 20;
-let maxEcecution_3 = 15;
-let maxEcecution_4 = 290;
+let maxEcecution_1 = 252;
+let maxEcecution_2 = 22;
+let maxEcecution_3 = 18;
+let maxEcecution_4 = 7;
 
 
 // Declare observer before using it
@@ -378,7 +378,7 @@ function onLoop() {
   ele.textContent = "+";
   impactSection.children[0].children[0].appendChild(ele);
   if(execution < maxEcecution_1){
-    setTimeout(onLoop, 11);
+    setTimeout(onLoop, 15);
 
   }
   
@@ -393,7 +393,7 @@ function onLoop_1(){
   ele.textContent = "+";
   impactSection.children[2].children[0].appendChild(ele);
   if(execution_2 < maxEcecution_2){
-    setTimeout(onLoop_1, 150);
+    setTimeout(onLoop_1, 180);
   }
 }
 
@@ -405,44 +405,44 @@ function onLoop_2(){
   ele_1.textContent = "+";
   impactSection.children[4].children[0].appendChild(ele_1);
   if(execution_3 < maxEcecution_3){
-    setTimeout(onLoop_2, 205);
+    setTimeout(onLoop_2, 220);
   }
 }
 
 
 
 
-//Loop for third one going till 5
-
-// function onLoop_2(){
-//   execution_3++;
-//   impactSection.children[6].children[0].textContent = execution_3;
-//   let ele = document.createElement("sup");
-//   ele.textContent = "+";
-//   impactSection.children[6].children[0].appendChild(ele); 
-//   if(execution_3 < maxEcecution_3){
-
-//     setTimeout(onLoop_2, 480);
-//   }
-// }
+// Loop for third one going till 5
 
 function onLoop_3(){
-  impactSection.children[6].children[0].textContent = Math.ceil(Math.random() * 5);
+  execution_4++;
+  impactSection.children[6].children[0].textContent = execution_4;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[6].children[0].appendChild(ele); 
   if(execution_4 < maxEcecution_4){
-    execution_4++;
-    setTimeout(onLoop_3, 10);
-  }
-  else{
 
-    impactSection.children[6].children[0].textContent = 5;
-    let eleLast = document.createElement("sup");
-    eleLast.textContent = "+";
-    impactSection.children[6].children[0].appendChild(eleLast); 
+    setTimeout(onLoop_3, 620);
   }
 }
+
+// function onLoop_3(){
+//   impactSection.children[6].children[0].textContent = Math.ceil(Math.random() * 5);
+//   let ele = document.createElement("sup");
+//   ele.textContent = "+";
+//   impactSection.children[6].children[0].appendChild(ele); 
+//   if(execution_4 < maxEcecution_4){
+//     execution_4++;
+//     setTimeout(onLoop_3, 10);
+//   }
+//   else{
+
+//     impactSection.children[6].children[0].textContent = 5;
+//     let eleLast = document.createElement("sup");
+//     eleLast.textContent = "+";
+//     impactSection.children[6].children[0].appendChild(eleLast); 
+//   }
+// }
 
 
 
