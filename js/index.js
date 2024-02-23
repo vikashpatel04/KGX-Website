@@ -336,12 +336,14 @@ document.addEventListener("DOMContentLoaded", function () {
 let execution = 0;
 let execution_2 = 0;
 let execution_3 = 0;
+let execution_4 = 0;
 
 //Initialization of three max-execution points for ending the number loop
 
-let maxEcecution_1 = 2000;
-let maxEcecution_2 = 50;
-let maxEcecution_3 = 5;
+let maxEcecution_1 = 252;
+let maxEcecution_2 = 22;
+let maxEcecution_3 = 18;
+let maxEcecution_4 = 7;
 
 
 // Declare observer before using it
@@ -350,9 +352,10 @@ const observer = new IntersectionObserver(entries => {
     // If the target element is visible
     if (entry.isIntersecting) {
       // Do something when the element becomes visible
-      setTimeout(onLoop, 0.5);
-      setTimeout(onLoop_1, 0.5);
-      setTimeout(onLoop_2, 0.5);
+      setTimeout(onLoop, 100);
+      setTimeout(onLoop_1, 100);
+      setTimeout(onLoop_2, 100);
+      setTimeout(onLoop_3, 100);
       // Unobserve the target element to stop listening
       observer.unobserve(impactSection); // Corrected variable name
     }
@@ -369,13 +372,13 @@ observer.observe(impactSection);
 //Loop for first one going till 2000
 
 function onLoop() {
-  execution += 4;
+  execution += 1;
   impactSection.children[0].children[0].textContent = execution;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[0].children[0].appendChild(ele);
   if(execution < maxEcecution_1){
-    setTimeout(onLoop, .1);
+    setTimeout(onLoop, 15);
 
   }
   
@@ -385,33 +388,61 @@ function onLoop() {
 
 function onLoop_1(){
   execution_2++;
-  
   impactSection.children[2].children[0].textContent = execution_2;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[2].children[0].appendChild(ele);
-  impactSection.children[4].children[0].textContent = execution_2;
-  let ele_1 = document.createElement("sup");
-  ele_1.textContent = "+";
-  impactSection.children[4].children[0].appendChild(ele_1);
   if(execution_2 < maxEcecution_2){
-    setTimeout(onLoop_1, 55);
+    setTimeout(onLoop_1, 180);
   }
-
 }
 
-//Loop for third one going till 5
 
 function onLoop_2(){
   execution_3++;
-  impactSection.children[6].children[0].textContent = execution_3;
+  impactSection.children[4].children[0].textContent = execution_3;
+  let ele_1 = document.createElement("sup");
+  ele_1.textContent = "+";
+  impactSection.children[4].children[0].appendChild(ele_1);
+  if(execution_3 < maxEcecution_3){
+    setTimeout(onLoop_2, 220);
+  }
+}
+
+
+
+
+// Loop for third one going till 5
+
+function onLoop_3(){
+  execution_4++;
+  impactSection.children[6].children[0].textContent = execution_4;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[6].children[0].appendChild(ele); 
-  if(execution_3 < maxEcecution_3){
-    setTimeout(onLoop_2, 800);
+  if(execution_4 < maxEcecution_4){
+
+    setTimeout(onLoop_3, 620);
   }
 }
+
+// function onLoop_3(){
+//   impactSection.children[6].children[0].textContent = Math.ceil(Math.random() * 5);
+//   let ele = document.createElement("sup");
+//   ele.textContent = "+";
+//   impactSection.children[6].children[0].appendChild(ele); 
+//   if(execution_4 < maxEcecution_4){
+//     execution_4++;
+//     setTimeout(onLoop_3, 10);
+//   }
+//   else{
+
+//     impactSection.children[6].children[0].textContent = 5;
+//     let eleLast = document.createElement("sup");
+//     eleLast.textContent = "+";
+//     impactSection.children[6].children[0].appendChild(eleLast); 
+//   }
+// }
 
 
 

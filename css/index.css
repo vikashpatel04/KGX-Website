@@ -137,6 +137,8 @@ body{
 /* Impacats CSS */
 
 #impacts {
+  user-select: none;
+
   margin: 4rem auto 2rem auto;
 }
 section.my-alert {
