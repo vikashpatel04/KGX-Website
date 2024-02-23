@@ -336,12 +336,14 @@ document.addEventListener("DOMContentLoaded", function () {
 let execution = 0;
 let execution_2 = 0;
 let execution_3 = 0;
+let execution_4 = 0;
 
 //Initialization of three max-execution points for ending the number loop
 
-let maxEcecution_1 = 2000;
-let maxEcecution_2 = 50;
-let maxEcecution_3 = 505;
+let maxEcecution_1 = 250;
+let maxEcecution_2 = 20;
+let maxEcecution_3 = 15;
+let maxEcecution_4 = 260;
 
 
 // Declare observer before using it
@@ -353,6 +355,7 @@ const observer = new IntersectionObserver(entries => {
       setTimeout(onLoop, 0.5);
       setTimeout(onLoop_1, 0.5);
       setTimeout(onLoop_2, 0.5);
+      setTimeout(onLoop_3, 0.5);
       // Unobserve the target element to stop listening
       observer.unobserve(impactSection); // Corrected variable name
     }
@@ -369,13 +372,13 @@ observer.observe(impactSection);
 //Loop for first one going till 2000
 
 function onLoop() {
-  execution += 4;
+  execution += 1;
   impactSection.children[0].children[0].textContent = execution;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[0].children[0].appendChild(ele);
   if(execution < maxEcecution_1){
-    setTimeout(onLoop, .1);
+    setTimeout(onLoop, 3);
 
   }
   
@@ -385,20 +388,29 @@ function onLoop() {
 
 function onLoop_1(){
   execution_2++;
-  
   impactSection.children[2].children[0].textContent = execution_2;
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[2].children[0].appendChild(ele);
-  impactSection.children[4].children[0].textContent = execution_2;
+  if(execution_2 < maxEcecution_2){
+    setTimeout(onLoop_1, 150);
+  }
+}
+
+
+function onLoop_2(){
+  execution_3++;
+  impactSection.children[4].children[0].textContent = execution_3;
   let ele_1 = document.createElement("sup");
   ele_1.textContent = "+";
   impactSection.children[4].children[0].appendChild(ele_1);
-  if(execution_2 < maxEcecution_2){
-    setTimeout(onLoop_1, 40);
+  if(execution_3 < maxEcecution_3){
+    setTimeout(onLoop_2, 205);
   }
-
 }
+
+
+
 
 //Loop for third one going till 5
 
@@ -414,14 +426,14 @@ function onLoop_1(){
 //   }
 // }
 
-function onLoop_2(){
+function onLoop_3(){
   impactSection.children[6].children[0].textContent = Math.ceil(Math.random() * 5);
   let ele = document.createElement("sup");
   ele.textContent = "+";
   impactSection.children[6].children[0].appendChild(ele); 
-  if(execution_3 < maxEcecution_3){
-    execution_3++;
-    setTimeout(onLoop_2, .10);
+  if(execution_4 < maxEcecution_4){
+    execution_4++;
+    setTimeout(onLoop_3, 2);
   }
   else{
 
