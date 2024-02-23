@@ -352,10 +352,10 @@ const observer = new IntersectionObserver(entries => {
     // If the target element is visible
     if (entry.isIntersecting) {
       // Do something when the element becomes visible
-      setTimeout(onLoop, 0.5);
-      setTimeout(onLoop_1, 0.5);
-      setTimeout(onLoop_2, 0.5);
-      setTimeout(onLoop_3, 0.5);
+      setTimeout(onLoop, 100);
+      setTimeout(onLoop_1, 100);
+      setTimeout(onLoop_2, 100);
+      setTimeout(onLoop_3, 100);
       // Unobserve the target element to stop listening
       observer.unobserve(impactSection); // Corrected variable name
     }
