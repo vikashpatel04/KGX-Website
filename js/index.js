@@ -343,7 +343,7 @@ let execution_4 = 0;
 let maxEcecution_1 = 250;
 let maxEcecution_2 = 20;
 let maxEcecution_3 = 15;
-let maxEcecution_4 = 260;
+let maxEcecution_4 = 290;
 
 
 // Declare observer before using it
@@ -378,7 +378,7 @@ function onLoop() {
   ele.textContent = "+";
   impactSection.children[0].children[0].appendChild(ele);
   if(execution < maxEcecution_1){
-    setTimeout(onLoop, 3);
+    setTimeout(onLoop, 11);
 
   }
   
@@ -433,7 +433,7 @@ function onLoop_3(){
   impactSection.children[6].children[0].appendChild(ele); 
   if(execution_4 < maxEcecution_4){
     execution_4++;
-    setTimeout(onLoop_3, 2);
+    setTimeout(onLoop_3, 10);
   }
   else{
 
