@@ -29,6 +29,22 @@ p{
   font-family: 'Google Sans Text Regular', fallback, sans-serif;
 
 }
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: var(--bgc-black);
+
+}
+::-webkit-scrollbar-thumb{
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:active{
+  background-color: #5c5a5a;
+}
+
+
+
 /* Hero section */
 .hero-section{
   /* background: url("../logo.svg"); */
@@ -59,10 +75,11 @@ p{
 /* Body section */
 body{
   background:
-        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
-        var(--dot-color);
+  linear-gradient(90deg, var(--dot-bg) 0, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent calc(var(--dot-space) - var(--dot-size)), transparent 100%) center / var(--dot-space) var(--dot-space),
+  linear-gradient(var(--dot-bg) 0, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent calc(var(--dot-space) - var(--dot-size)), transparent 100%) center / var(--dot-space) var(--dot-space),
+  var(--dot-color);
   animation: moveDots 500s linear infinite;
+  
 }
 
 @keyframes moveDots {
