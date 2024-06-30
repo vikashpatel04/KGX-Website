@@ -84,10 +84,10 @@ body{
 
 @keyframes moveDots {
   from {
-    background-position: 0 100%, 0 100%;
+    background-position: 50% 100%, 0 100%;
   }
   to {
-    background-position: 0 0, 0 0;
+    background-position: 50% 0, 0 0;
   }
   
 }
