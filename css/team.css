@@ -11,7 +11,7 @@
   
   html{
     background: var(--dot-bg);
-    font-family: "JetBrains Mono", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "JetBrains Mono", monospace;
   }
   
   @font-face {
@@ -57,3 +57,7 @@ body{
     }
     
   }
+  /* .card > div{
+    height: 200px;
+    width: 200px;
+  } */

@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,11 +7,9 @@
   <title>KGXperience | Innovation Cell</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-  <link rel="shortcut icon" href="./Images/logos/kgx_logo_black.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/logos/kgx_logo_black.png" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!--Replace with your tailwind.css once created-->
-  <link href="https://unpkg.com/@tailwindcss/custom-forms/dist/custom-forms.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css">
   <link href="css/index.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/c55e24ad37.js" crossorigin="anonymous"></script>
   <style>
@@ -25,19 +22,19 @@
   </style>
 </head>
 
-<body class="leading-normal tracking-normal text-indigo-400">
+<body class="leading-normal tracking-normal text-indigo-400 "><!--font-JetBrainsMono-->
   <div class="h-full">
     <!--Nav-->
-    <nav class="border-gray-200 dark:bg-gray-900">
+    <nav class="border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <div class="flex justify-center items-center flex-col logo_hero_wrap">
-            <img src="Images/logos/kgx_white-logo.svg" class="hero_logo h-8 lg:h-10" alt="kgx-logo" />
+            <img src="/assets/images/logos/kgx_white-logo.svg" class="hero_logo h-8 lg:h-10" alt="kgx-logo" />
             <p class="hero_logo_text ">KGXperience</p>
           </div>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <img src="Images/logos/White KG Edu Logo.png" class="w-20 hidden md:block lg:block" alt="kgisl-logo" />
+          <img src="/assets/images/logos/White KG Edu Logo.png" class="w-20 hidden md:block lg:block" alt="kgisl-logo" />
           <button data-collapse-toggle="navbar-cta" type="button"
             class="navbar-burger inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-cta" aria-expanded="false">
@@ -109,8 +106,8 @@
         </div>
         <div class="flex justify-center items-end h-full">
           <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse gap-6">
-            <img src="./Images/logos/kgx_white-logo.svg" alt="KGX logo" class="h-10">
-            <img src="Images/logos/White KG Edu Logo.png" class="w-20" alt="kgedu-logo" />
+            <img src="/assets/images/logos/kgx_white-logo.svg" alt="KGX logo" class="h-10">
+            <img src="/assets/images/logos/White KG Edu Logo.png" class="w-20" alt="kgedu-logo" />
           </a>
         </div>
        
@@ -129,8 +126,8 @@
       <!-- Jumbotron -->
       <!-- IDX alike hero -->
       <div>
-        <h1 class="header">
-          What if your dev experience was
+        <h1 class="header text-5xl">
+          Empowering Innovation, Shaping Tomorrow
         </h1>
         <table class="fancy-table">
           <tr>
@@ -275,21 +272,21 @@
       <!-- scroll down -->
 
       <!-- About us -->
-      <section class="flex items-center py-8 font-poppins dark:bg-gray-800 " id="about">
+      <section class="flex items-center py-8 font-poppins" id="about">
         <div class="justify-center flex-1 max-w-7xl px-4 py-4 mx-auto lg:py-6 md:px-3">
           <div class="flex flex-wrap items-center">
             <div class="w-full px-4 mb-10 xl:w-1/2 lg:mb-8">
               <div class="flex flex-wrap">
                 <div class="w-full px-4 md:w-1/2">
-                  <img src="https://i.postimg.cc/YCJW7jv8/pexels-fauxels-3184357.jpg" alt=""
+                  <img src="/assets/images/Artificial_Intellience_Brain.jpg" alt="AI_img"
                     class="object-cover w-full mb-6 rounded-lg h-80">
-                  <img src="https://i.postimg.cc/j5L5bX2d/pexels-andrea-piacquadio-3757946.jpg" alt=""
+                  <img src="/assets/images/Autonomous_Vehcile.jpg" alt="Automation_Vehicle"
                     class="object-cover w-full rounded-lg h-80">
                 </div>
                 <div class="w-full px-4 md:w-1/2 xl:mt-11">
-                  <img src="https://i.postimg.cc/sXJQ5cw0/pexels-pixabay-256455-1.jpg" alt=""
+                  <img src="/assets/images/Embedded_Systems.jpg" alt="Embedded_Systems_img"
                     class="object-cover w-full mb-6 rounded-lg h-80">
-                  <img src="https://i.postimg.cc/vHTg6593/aqq.jpg" alt="" class="object-cover w-full rounded-lg h-80">
+                  <img src="/assets/images/Dev_guy.jpg" alt="Dev_guy_img" class="object-cover w-full rounded-lg h-80">
                 </div>
               </div>
             </div>
@@ -304,7 +301,7 @@
                 labore et dolore magna aliqua. Ut enim ad minim veniam
               </p> -->
               <ul class="mb-10">
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-1-circle-fill" viewBox="0 0 16 16">
@@ -314,7 +311,7 @@
                   </span>
                   We believe the power of like-minded individuals is immense. By focusing on deep tech, we not only solve problems but also empower our community through knowledge.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-2-circle-fill" viewBox="0 0 16 16">
@@ -324,7 +321,7 @@
                   </span>
                   Shared Vision, Shared Success: Unity, integrity, and collaboration define our approach to achieving common goals and fostering innovation.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-3-circle-fill" viewBox="0 0 16 16">
@@ -334,7 +331,7 @@
                   </span>
                   Catalyst for Change: Nurturing talent, forging paths in innovation, and shaping the future through our dedicated commitment to excellence.
                 </li>
-                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300">
+                <li class="flex items-start mb-4 text-base text-gray-600 dark:text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                   <span class="mr-3 text-blue-500 dark:text-blue-400 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                       class="w-6 h-6 bi bi-4-circle-fill" viewBox="0 0 16 16">
@@ -496,7 +493,7 @@
 
       <!-- Team -->
 
-      <section class="py-8 max-w-7xl mx-auto w-full py-8 overflow-hidden" id="team">
+      <section class="max-w-7xl mx-auto w-full py-8 overflow-hidden" id="team">
         <div class="transition duration-500 ease-in-out transform scale-100 translate-x-0 translate-y-0 opacity-100">
           <div class="mb-12 space-y-5 md:mb-16 md:text-center">
             <h1 class="mb-5 text-3xl font-semibold text-white md:text-center md:text-5xl">
@@ -509,7 +506,7 @@
         </div>
         <figure class="relative transition-all duration-300 cursor-pointer group ">
           <a href="#">
-            <img class="h-auto grayscale hover:grayscale-0 max-w-full rounded-2xl filter" src="Images/Teams/Team.jpg"
+            <img class="h-auto grayscale hover:grayscale-0 max-w-full rounded-2xl filter" src="/assets/images/Teams/Team.jpg"
               width="100%" alt="image description">
           </a>
           <figcaption class="absolute px-4 text-lg text-white bottom-6">
@@ -831,7 +828,7 @@
           <div class="-mx-4 flex flex-wrap justify-between">
             <div class="px-4 my-4 w-full xl:w-1/5">
               <a href="/" class="block w-56 mb-10">
-                <img src="Images/logos/kgx_white-logo.svg" width="220" height="220" alt="">
+                <img src="/assets/images/logos/kgx_white-logo.svg" width="220" height="220" alt="">
               </a>
                 <p class="text-justify">
                 Shared Vision, Shared Success: Unity, integrity, and collaboration define our approach to achieving common goals and fostering innovation.
@@ -899,7 +896,7 @@
           <div class="flex flex-wrap justify-between">
             <div class="px-4 w-full text-center sm:w-auto sm:text-left">
               Copyright © 2020
-              <script>new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear())</script>- 2022
+              <script>new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear())</script>
               KGXperience. All Rights Reserved.
             </div>
             <div class="px-4 w-full text-center sm:w-auto sm:text-left">
@@ -915,7 +912,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-  <script src="js/index.js"></script>
+  <script type="module" src="js/index.js"></script>
 </body>
 
 </html>
